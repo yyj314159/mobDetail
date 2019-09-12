@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "myfont";/*定义字体名称*/
+    src: url('./SHOWG.eot');/*兼容eot*/
+    src: url('./SHOWG.eot?#iefix') format('embedded-opentype'),
+    url('./SHOWG.woff2') format('woff2'),
+    url('./SHOWG.woff') format('woff'),/*火狐支持woff,woff2,opentype字体*/
+    url('./SHOWG.ttf') format('truetype');/*基于webkit内核支持truetype字体*/
+    font-weight: normal;
+    font-style: normal;
+    font-stretch:ultra-expanded;/*定义字体符合拉伸*/
+}
+
+.showgfont{
+  font-family:myfont;
+}

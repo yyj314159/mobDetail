@@ -1,0 +1,233 @@
+//公共样式
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, p {
+  border: 0;
+  font-weight: normal;
+}
+em{
+  color:#3D9BE9;
+  font-style: normal;
+}
+body {
+  color: #5e5e5e;
+  font-size: 14px;
+  font-family: "微软雅黑", "Arial Narrow", "Microsoft Yahei";
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #F5FAFE;
+}
+a {
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+input, textarea {
+  outline: 0;
+  box-shadow:0 0 0 rgba(0,0,0,0);
+  -webkit-appearance:none;
+}
+
+textarea {
+  resize: none;
+}
+
+select, input, img, select {
+  vertical-align: middle;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+input::-ms-clear{
+  display: none;
+}
+input::-ms-reveal{
+  display: none;
+}
+input::-o-clear{
+  display: none;
+}
+i, cite {
+  font-style: normal
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.clear {
+  clear: both;
+}
+
+.zuma_bg_ {
+
+  //背景色
+  &main {
+    background-color: #3D9BE9; //主色
+  }
+
+  &g0 {
+    background-color: #F5FAFE; //背景色
+  }
+}
+
+.zuma_color_ {
+
+  //字体色
+  &input {
+    color: #77B9F0; //搜索框光标键入还未输入字体时的提示色
+  }
+
+  &nav {
+    color: #122F46; //导航深色文字
+  }
+
+  &other {
+    color: #404040; //页面中灰色文字
+  }
+}
+
+.zuma_flex_ {
+  &flex1 {
+    flex: 1;
+  }
+
+  &none {
+    flex: none;
+  }
+
+  &row_start {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &row_between {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &row_end {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  &column_start {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &column_between {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &column_end {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  &column_center {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.zuma_margin_ {
+  &r10 {
+    margin-right: 10px;
+  }
+
+  &r20 {
+    margin-right: 20px;
+  }
+
+  &r30 {
+    margin-right: 30px;
+  }
+}
+
+.zuma_padding_ {
+  &p10 {
+    padding-right: 10px;
+  }
+
+  &p20 {
+    padding-right: 20px;
+  }
+
+  &p30 {
+    padding-right: 30px;
+  }
+}
+
+@font-face {
+  font-family: "myfont";/*定义字体名称*/
+    src: url('../font/SHOWG/SHOWG.eot');/*兼容eot*/
+    src: url('../font/SHOWG/SHOWG.eot?#iefix') format('embedded-opentype'),
+    url('../font/SHOWG/SHOWG.woff2') format('woff2'),
+    url('../font/SHOWG/SHOWG.woff') format('woff'),/*火狐支持woff,woff2,opentype字体*/
+    url('../font/SHOWG/SHOWG.ttf') format('truetype');/*基于webkit内核支持truetype字体*/
+    font-weight: normal;
+    font-style: normal;
+    font-stretch:ultra-expanded;/*定义字体符合拉伸*/
+}
+
+.showgfont{
+  font-family:myfont;
+  color:rgba(255,102,51,1);
+}
